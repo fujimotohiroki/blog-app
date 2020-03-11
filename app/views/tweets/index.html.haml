@@ -1,0 +1,20 @@
+= render partial: 'header'
+
+.image
+  .image__box
+    %ul.image__box__list
+      %li.image__box__lists
+        = image_tag('https://lions-mansion.jp/wp/wp-content/uploads/2017/02/articlesPhoto001.jpg', width: '310px', height:'200px')
+        %p.image__box__list__text 
+          子育てはみんなで
+      %li.image__box__lists
+        = image_tag('https://image-select.mamastar.jp/interspace/wp-content/uploads/1536286933-07aedeaed205b80abbe1b3754701bcfb-600x400.jpg', width: '310px', height:'200px')
+        %p.image__box__list__text 
+          気分転換に
+      %li.image__box__lists
+        = image_tag('https://mynavi-ms.jp/magazine/item/pixta_40285591_M.png', width: '310px', height:'200px')
+        %p.image__box__list__text 
+          一人で悩まず書いてみよう
+
+= render partial: 'main'
+= render partial: 'footer'
