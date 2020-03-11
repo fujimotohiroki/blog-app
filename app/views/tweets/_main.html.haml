@@ -1,0 +1,15 @@
+.main
+  %h4.main__title みんなの投稿
+  .mb-3
+  %table.table.table-hover
+    %thead.thead-default
+      %tr.top
+        %th= Tweet.human_attribute_name(:name)
+        %th= Tweet.human_attribute_name(:title)
+        %th= Tweet.human_attribute_name(:created_at)
+      %thoby
+        - @tweets.each do |tweet|
+          %tr
+            %td= tweet.name
+            %td= link_to tweet.title
+            %td= tweet.created_at
