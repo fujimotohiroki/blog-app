@@ -1,0 +1,35 @@
+= render partial: 'header'
+
+.new
+  .nav.justify-content-end 
+    = link_to 'みんなの投稿', root_path, class: 'nav-link'
+
+  = form_with(model: @tweet, local: true) do |form|
+    = form.label :image, '画像を投稿しよう'
+    #img_field{onclick: "$('#file').click()"}
+      - if @tweet.image.url.present?
+        = image_tag(@tweet.image.url)
+      - else
+        %i.fas.fa-image
+        %i.fas.fa-file-upload.add
+
+    = form.file_field :image, class: "image", style: "display:none;", id: "file"
+
+
+
+    .form-group
+      = form.label :name
+      = form.text_field :name, class: 'form-control', placeholder: "Nickname"
+    .form-group
+      = form.label :title
+      = form.text_field :title, class: 'form-control', placeholder: "タイトル"
+    .form-group
+      = form.label :text
+      = form.text_area :text, class: 'form-control', placeholder: "今日の出来事や子育ての悩みを書いてみよう！" , rows: "5"
+
+
+    = form.submit "投稿する"
+
+
+
+
