@@ -1,5 +1,3 @@
-= render partial: 'header'
-
 .new
   .nav.justify-content-end 
     = link_to 'みんなの投稿', root_path, class: 'nav-link'
@@ -8,14 +6,12 @@
     = form.label :image, '画像を投稿しよう'
     #img_field{onclick: "$('#file').click()"}
       - if @tweet.image.url.present?
-        = image_tag(@tweet.image.url)
+        = image_tag @tweet.image.url
       - else
         %i.fas.fa-image
         %i.fas.fa-file-upload.add
 
     = form.file_field :image, class: "image", style: "display:none;", id: "file"
-
-
 
 
 
@@ -31,7 +27,3 @@
 
 
     = form.submit "投稿する"
-
-
-
-
