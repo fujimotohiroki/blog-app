@@ -13,3 +13,6 @@
             %td= tweet.name
             %td= link_to tweet.title
             %td= tweet.created_at
+            %td
+              = link_to '削除', "/tweets/#{tweet.id}", method: :delete, data: { confirm: "タイトル「#{tweet.title}」を削除します。よろしいですか？"}
+
