@@ -1,0 +1,22 @@
+= render partial: 'header'
+
+
+%table.table
+  %tbody.table__list
+    .table__list__image
+      = image_tag @tweet.image.to_s, size: "400x400", class: ".table__list__image__photo"
+    %tr
+      %th= Tweet.human_attribute_name(:name)
+      %td= @tweet.name
+    %tr
+      %th= Tweet.human_attribute_name(:title)
+      %td= @tweet.title
+    %tr
+      %th= Tweet.human_attribute_name(:text)
+      %td= simple_format(h(@tweet.text), {}, sanitize: false, wrapper_tag: "div")
+
+
+
+
+
+= render partial: 'footer'
