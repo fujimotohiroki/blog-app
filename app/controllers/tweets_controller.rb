@@ -1,8 +1,9 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: [:edit, :show]
+  before_action :move_to_index, except: [:index, :show]
   
   def index
-    @tweets = Tweet.all
+    @tweets = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(7)
   end
 
   def new  
@@ -33,10 +34,14 @@ class TweetsController < ApplicationController
 
   private
   def tweet_params
-    params.require(:tweet).permit(:name, :title, :text, :image, :img_cache, :remove_img)
+    params.require(:tweet).permit(:title, :text, :image).merge(user_id: current_user.id)
   end
 
   def set_tweet
     @tweet = Tweet.find(params[:id]) 
+  end
+
+  def move_to_index
+    redirect_to action: :index unless user_signed_in?
   end
 end
