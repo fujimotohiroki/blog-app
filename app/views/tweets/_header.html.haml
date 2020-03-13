@@ -10,8 +10,7 @@
           %li= link_to "マイページ", "/users/#{current_user.id}"
           
         = link_to  "投稿する", "/tweets/new", class: "post"
-
-
+      
       - else
         .header__box__select__start
           = link_to "ログイン", new_user_session_path, class: 'post'

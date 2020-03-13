@@ -1,4 +1,4 @@
-= render partial: 'tweets/header'
+
 
 .container
   %p.name
@@ -9,13 +9,11 @@
   %table.table.table-hover
     %thead.thead-default
       %tr.top
-        -# %th= User.human_attribute_name(:nickname)
         %th= Tweet.human_attribute_name(:title)
         %th= Tweet.human_attribute_name(:created_at)
     %thoby
       - @tweets.each do |tweet|
         %tr
-          -# %td= tweet.user.nickname
           %td= link_to tweet.title, tweet
           %td= tweet.created_at
           - if user_signed_in? && current_user.id == tweet.user_id
@@ -25,4 +23,7 @@
       = paginate(@tweets) 
 
 = render partial: 'tweets/footer'
+= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-primary"
+
+
   

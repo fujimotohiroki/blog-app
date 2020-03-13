@@ -12,6 +12,7 @@ class TweetsController < ApplicationController
 
   def create
     Tweet.create(tweet_params)
+    redirect_to root_path
   end
 
   def destroy
@@ -29,6 +30,8 @@ class TweetsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @tweet.comments.includes(:user)
   end
 
 
