@@ -4,16 +4,19 @@
   %table.table.table-hover
     %thead.thead-default
       %tr.top
-        %th= Tweet.human_attribute_name(:name)
+        %th= User.human_attribute_name(:nickname)
         %th= Tweet.human_attribute_name(:title)
         %th= Tweet.human_attribute_name(:created_at)
       %thoby
         - @tweets.each do |tweet|
           %tr
-            %td= tweet.name
+            %td= tweet.user.nickname
             %td= link_to tweet.title, tweet
             %td= tweet.created_at
-            %td
-              = link_to '削除', "/tweets/#{tweet.id}", method: :delete, data: { confirm: "タイトル「#{tweet.title}」を削除します。よろしいですか？"}
-              = link_to '編集', "/tweets/#{tweet.id}/edit", method: :get
+            - if user_signed_in? && current_user.id == tweet.user_id
+              %td
+                = link_to '削除', "/tweets/#{tweet.id}", method: :delete, data: { confirm: "タイトル「#{tweet.title}」を削除します。よろしいですか？"}
+                = link_to '編集', "/tweets/#{tweet.id}/edit", method: :get
+        = paginate(@tweets) 
+
 
