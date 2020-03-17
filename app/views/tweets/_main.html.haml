@@ -15,7 +15,7 @@
             %td= tweet.created_at
             - if user_signed_in? && current_user.id == tweet.user_id
               %td
-                = link_to '削除', "/tweets/#{tweet.id}", method: :delete, data: { confirm: "タイトル「#{tweet.title}」を削除します。よろしいですか？"}
+                = link_to '削除', "/tweets/#{tweet.id}", method: :delete, class: "text-muted", data: { confirm: "タイトル「#{tweet.title}」を削除します。よろしいですか？"}
                 = link_to '編集', "/tweets/#{tweet.id}/edit", method: :get
         = paginate(@tweets) 
 

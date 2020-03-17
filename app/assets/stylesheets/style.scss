@@ -1,44 +1,61 @@
+// * {
+//     margin:0; padding
+html,
+body,
+div.background {
+    min-height: 100%;
+    height: auto !important;
+    // height: 100%; /* 「div.background」に対してはmin-heightに対応していないブラウザ用 */
+}
+
+
 body {
+    // margin: 0;
+    // padding: 0;
+    background-size: contain;
+    width: 100%;
+    background-size: cover;
     height: 100%;
-  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  background:#ec6a38;
-  -webkit-animation:colour 10s linear infinite;
-  -moz-animation:colour 10s linear infinite;
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    // -webkit-animation:colour 10s linear infinite;
+    // -moz-animation:colour 10s linear infinite;
 }
-@-webkit-keyframes colour{
-  0%{
-      background:#FFFAF0
-  }
-
-  40%{
-      background:#FFE4E1
-  }
-
-  80%{
-      background:#FFF0F5
-  }
-
-  100%{
-      background:#FFC0CB
-  }
-
+a:hover{
+    text-decoration: none;
 }
+// @-webkit-keyframes colour{
+//   0%{
+//       background:#FFFAF0
+//   }
 
-@-moz-keyframes colour{
-  0%{
-      background:#ec6a38
-  }
+//   40%{
+//       background:#FFE4E1
+//   }
 
-  40%{
-      background:#ec4038
-  }
+//   80%{
+//       background:#FFF0F5
+//   }
 
-  80%{
-      background:#ec9138
-  }
+//   100%{
+//       background:#FFC0CB
+//   }
 
-  100%{
-      background:#ec6a38
-  }
+// }
 
-}
+// @-moz-keyframes colour{
+//   0%{
+//       background:#ec6a38
+//   }
+
+//   40%{
+//       background:#ec4038
+//   }
+
+//   80%{
+//       background:#ec9138
+//   }
+
+//   100%{
+//       background:#ec6a38
+//   }
+

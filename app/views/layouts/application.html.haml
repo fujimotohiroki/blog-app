@@ -21,13 +21,13 @@
             - if user_signed_in?
               %span= current_user.nickname
               %ul.header__box__select__log
-                %li= link_to "マイページ", "/users/#{current_user.id}"
+                %li= link_to "マイページ", "/users/#{current_user.id}", class: "btn btn-primary"
                 
-              = link_to  "投稿する", "/tweets/new", class: "post"
+                %li= link_to  "投稿する", "/tweets/new", class: "btn btn-primary"
       
             - else
-              .header__box__select__start
-                = link_to "ログイン", new_user_session_path, class: 'post'
-                = link_to "ブログを始める", new_user_registration_path, class: 'post'
+              %ul.header__box__select__log
+                %li= link_to "ログイン", new_user_session_path, class: "btn btn-primary"
+                %li= link_to "ブログを始める", new_user_registration_path, class: "btn btn-primary"
       = yield
 

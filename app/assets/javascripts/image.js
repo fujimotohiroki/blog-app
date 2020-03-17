@@ -14,7 +14,7 @@ $(function(){
             $preview.empty();
             $preview.append($('<img>').attr({
               src: e.target.result,
-              width: "500px",
+              width: "450px",
               class: "preview",
               title: file.name
             }));
