@@ -17,7 +17,7 @@
   
 ## 投稿画面
 <p align="center">
-  
+  <img width="961" alt="スクリーンショット 2020-03-18 16 19 35" src="https://user-images.githubusercontent.com/59870212/76935371-56945900-6934-11ea-974f-32a007c50cfe.png">
 
 
 
