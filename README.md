@@ -47,12 +47,12 @@
 
 # 使用方法
   `$ git clone https://github.com/fujimotohiroki/blog-app.git` <br><br>
-  `$ cd blog-app`
-  `$ bundle install`
-  `$ rails db:create`
-  `$ rails db:migrate`
-  `$ rails s`
-👉 http://localhost:3000
+  `$ cd blog-app` <br><br>
+  `$ bundle install` <br><br>
+  `$ rails db:create` <br><br>
+  `$ rails db:migrate` <br><br>
+  `$ rails s` <br><br>
+👉 http://localhost:3000 <br><br>
 
 ## 👀 Author
 
