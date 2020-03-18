@@ -6,16 +6,16 @@
 
 ## 🌐 App URL
 
-### **https://cupramen-timer.firebaseapp.com**  
+### **https://今後デプロイ予定**  
 　
 ## 💬 Usage
 
-`$ git clone https://github.com/aocattleya/blog-app.git`  <br><br>
+`$ git clone https://github.com/fujimotohiroki/blog-app.git`  <br><br>
 　
 ## :art: Character Design
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/39142850/69484816-0112d880-0e7b-11ea-99a4-9a06b928a7b8.jpeg" width=70%>
+  <img src="https://gyazo.com/7408374139c87edbf4327b0b507b8988" width=70%>
 </p><br><br>
 
 ## 📦 Features
