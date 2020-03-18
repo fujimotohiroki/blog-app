@@ -1,4 +1,4 @@
-<h2 align="center">family-blog</h2>
+<h1 align="center">family-blog</h2>
 
 # アプリ概要
   子育てを頑張っているママさん達に向けたブログアプリ
