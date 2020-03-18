@@ -17,6 +17,6 @@
               %td
                 = link_to '削除', "/tweets/#{tweet.id}", method: :delete, class: "text-muted", data: { confirm: "タイトル「#{tweet.title}」を削除します。よろしいですか？"}
                 = link_to '編集', "/tweets/#{tweet.id}/edit", method: :get
-        = paginate(@tweets) 
+  = paginate(@tweets) 
 
 

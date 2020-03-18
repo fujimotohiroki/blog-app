@@ -23,39 +23,20 @@ body {
 a:hover{
     text-decoration: none;
 }
-// @-webkit-keyframes colour{
-//   0%{
-//       background:#FFFAF0
-//   }
 
-//   40%{
-//       background:#FFE4E1
-//   }
+.pagination>li>a {          
+    border: none;     /*枠線をなくす*/
+    color: #696969;   /*文字の色を変える*/
+}
 
-//   80%{
-//       background:#FFF0F5
-//   }
+  /* 表示しているページ番号のデザイン */
+.pagination>.active>a {     
+    background: #93c9ff;     /*背景の色を変える*/
+    border-radius: 15px;     /*角を丸くする*/
+}
 
-//   100%{
-//       background:#FFC0CB
-//   }
-
-// }
-
-// @-moz-keyframes colour{
-//   0%{
-//       background:#ec6a38
-//   }
-
-//   40%{
-//       background:#ec4038
-//   }
-
-//   80%{
-//       background:#ec9138
-//   }
-
-//   100%{
-//       background:#ec6a38
-//   }
+/*ホバー時のデザイン*/
+.pagination>li>a:hover {        
+    border-radius: 15px;    /*角を丸くする*/
+}
 

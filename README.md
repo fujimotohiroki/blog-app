@@ -1,6 +1,6 @@
 <h2 align="center">family-blog</h2>
 
-
+子育てを頑張っているママさん達に向けたブログアプリ
 
 ## 🌐 App URL
 
@@ -8,47 +8,47 @@
 　
 ## 💬 Usage
 
-`$ git clone https://github.com/fujimotohiroki/blog-app.git`  <br><br>
-　
+`$ git clone https://github.com/fujimotohiroki/blog-app.git` <br><br>
+$ git clone https://github.com/nakanishikeita03/kei-match2.git
+$ cd blog-app
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails s
+## 👉 http://localhost:3000
 ## :art: Top Design
 
 <p align="center">
   <img src="https://i.gyazo.com/5584e80c5a2de4d090f7b4b50549ad85.jpg" width=70%>
 </p><br><br>
 
-## 📦 Features
-
-<h3 align="center">- PWA -</h3>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/39142850/71645747-30412300-2d20-11ea-9f20-647b1e466de8.jpg" width=40%>
-</p>
-
----
-
-<h3 align="center">- CSS Animation -</h3>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/39142850/69484901-e0974e00-0e7b-11ea-8fac-a97589df5259.gif" width=70%>
-</p>
-
----
-
-<h3 align="center">- Post -</h3>
-
-<p align="center">
-  <img src="https://gyazo.com/3e35518145c5eb0431ae8d670bcc8c6b" width=70%>
-</p>
-
----
-
-<h3 align="center">- Responsive design -</h3>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/39142850/69484905-e42ad500-0e7b-11ea-9a99-b92a099ca1d4.jpeg" width=30%>
-</p>
 
 
+# 機能ならびに使用技術
+
+- フロントエンド
+  - Haml/Sassでのマークアップ
+  - jQueryを用いた動的アニメーション
+
+- サーバーサイド
+  - ユーザー登録(/編集)機能(gem Deviseを使用)
+  - ユーザー画像の登録機能 (gem Carrierwaveを使用)
+  - 投稿(編集、削除)機能
+  - 投稿一覧、ページネーション機能(gem kaminariを使用)
+
+- インフラ
+  - CapistranoによるEC2インスタンスへの自動デプロイ
+  - S3を用いた画像データのクラウドストレージ保存
+  - 上記は今後の予定
+
+# 使用技術一覧
+
+- Ruby 2.5.1
+- Ruby on Rails 5.2.3
+- MySQL 0.5.3
+- Haml 5.1.2
+- Sass 5.0.7
+- jQuery 1.12.4
 ## 👀 Author
 
 - [Github](https://github.com/fujimotohiroki)
