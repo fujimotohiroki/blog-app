@@ -20,6 +20,5 @@
     .form-group
       = form.label :text
       = form.text_area :text, class: 'form-control', placeholder: "今日の出来事や子育ての悩みを書いてみよう！" , rows: "5"
-
-
-    = form.submit "投稿する"
+    .btn-data
+      = form.submit class: "btn btn-primary"

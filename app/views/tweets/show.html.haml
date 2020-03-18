@@ -2,7 +2,7 @@
 %table.table
   %tbody.table__list
     .table__list__image
-      = image_tag @tweet.image.to_s, size: "400x400", class: ".table__list__image__photo"
+      = image_tag @tweet.image.to_s, size: "500x400", class: ".table__list__image__photo"
     %tr
       %th= User.human_attribute_name(:nickname)
       %td= @tweet.user.nickname
