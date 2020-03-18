@@ -1,8 +1,13 @@
 .new
   .nav.justify-content-end 
     = link_to 'みんなの投稿', root_path, class: 'nav-link'
-
+  - if @tweet.errors.any?
+    #error_explanation.alert.alert-danger
+      %ul
+        - @tweet.errors.full_messages.each do |message|
+          %li= message
   = form_with(model: @tweet, local: true) do |form|
+
     = form.label :image, '画像を投稿しよう'
     #img_field{onclick: "$('#file').click()"}
       - if @tweet.image.url.present?

@@ -4,8 +4,7 @@ class Tweet < ApplicationRecord
   belongs_to :user
   has_many :comments
 
-  validates :text, presence: true
-  validates :title, presence: true
-  
+  validates :title, presence: true, length: { maximum: 30 }
+  validates :text, presence: true, length: { maximum: 150 }
 
 end
