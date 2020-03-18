@@ -15,7 +15,7 @@
 ## :art: Character Design
 
 <p align="center">
-  <img src="https://gyazo.com/7408374139c87edbf4327b0b507b8988" width=70%>
+  <img src="https://i.gyazo.com/5584e80c5a2de4d090f7b4b50549ad85.jpg" width=70%>
 </p><br><br>
 
 ## 📦 Features
