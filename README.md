@@ -1,5 +1,3 @@
-![ramenTimer](https://user-images.githubusercontent.com/39142850/63760432-4403f500-c8fa-11e9-9eba-3e22c3179e06.gif)
-
 <h2 align="center">family-blog</h2>
 
 
@@ -12,7 +10,7 @@
 
 `$ git clone https://github.com/fujimotohiroki/blog-app.git`  <br><br>
 　
-## :art: Character Design
+## :art: Top Design
 
 <p align="center">
   <img src="https://i.gyazo.com/5584e80c5a2de4d090f7b4b50549ad85.jpg" width=70%>
@@ -36,10 +34,10 @@
 
 ---
 
-<h3 align="center">- Timer -</h3>
+<h3 align="center">- Post -</h3>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/39142850/69484904-e2f9a800-0e7b-11ea-9f43-36e13a29df47.gif" width=70%>
+  <img src="https://gyazo.com/3e35518145c5eb0431ae8d670bcc8c6b" width=70%>
 </p>
 
 ---
