@@ -10,11 +10,12 @@
 
 `$ git clone https://github.com/fujimotohiroki/blog-app.git` <br><br>
 
-## :art: Top Design
+## トップページ
 
 <p align="center">
   <img width="1395" alt="スクリーンショット 2020-03-18 14 32 09" src="https://user-images.githubusercontent.com/59870212/76934971-8bec7700-6933-11ea-82b0-a1306499a9ae.png">
-</p><br><br>
+
+<p align="center">
 
 
 
