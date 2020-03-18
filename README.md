@@ -9,13 +9,7 @@
 ## 💬 Usage
 
 `$ git clone https://github.com/fujimotohiroki/blog-app.git` <br><br>
-$ git clone https://github.com/nakanishikeita03/kei-match2.git
-$ cd blog-app
-$ bundle install
-$ rails db:create
-$ rails db:migrate
-$ rails s
-## 👉 http://localhost:3000
+
 ## :art: Top Design
 
 <p align="center">
