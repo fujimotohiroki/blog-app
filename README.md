@@ -6,9 +6,6 @@
 
 ### **https://今後デプロイ予定**  
 　
-## 💬 Usage
-
-`$ git clone https://github.com/fujimotohiroki/blog-app.git` <br><br>
 
 ## トップページ
 
@@ -46,6 +43,10 @@
 - Haml 5.1.2
 - Sass 5.0.7
 - jQuery 1.12.4
+
+# 使用方法
+  `$ git clone https://github.com/fujimotohiroki/blog-app.git` <br><br>
+
 ## 👀 Author
 
 - [Github](https://github.com/fujimotohiroki)
