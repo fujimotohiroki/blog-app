@@ -46,6 +46,12 @@
 
 # 使用方法
   `$ git clone https://github.com/fujimotohiroki/blog-app.git` <br><br>
+  `$ cd blog-app`
+  `$ bundle install`
+  `$ rails db:create`
+  `$ rails db:migrate`
+  `$ rails s`
+👉 http://localhost:3000
 
 ## 👀 Author
 
