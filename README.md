@@ -13,9 +13,14 @@
 <p align="center">
   <img width="1395" alt="スクリーンショット 2020-03-18 14 32 09" src="https://user-images.githubusercontent.com/59870212/76934971-8bec7700-6933-11ea-82b0-a1306499a9ae.png">
   
-## 投稿画面
+## 投稿機能
 <p align="center">
-  <img width="961", height="400" alt="スクリーンショット 2020-03-18 16 19 35" src="https://user-images.githubusercontent.com/59870212/76935371-56945900-6934-11ea-974f-32a007c50cfe.png">
+  <img width="961", height="500" alt="スクリーンショット 2020-03-18 16 19 35" src="https://user-images.githubusercontent.com/59870212/76935371-56945900-6934-11ea-974f-32a007c50cfe.png">
+  
+## 投稿詳細、コメント機能
+<p align="center">
+  <img width="961", height="500" alt="スクリーンショット 2020-03-18 16 40 34" src="https://user-images.githubusercontent.com/59870212/76936998-3dd97280-6937-11ea-88c9-a51310f2f59e.png">
+
 
 
 
@@ -30,6 +35,7 @@
   - ユーザー画像の登録機能 (gem Carrierwaveを使用)
   - 投稿(編集、削除)機能
   - 投稿一覧、ページネーション機能(gem kaminariを使用)
+  - 投稿詳細、コメント機能
 
 - インフラ
   - CapistranoによるEC2インスタンスへの自動デプロイ
