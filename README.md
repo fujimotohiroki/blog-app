@@ -47,10 +47,43 @@
   - 投稿一覧、ページネーション機能(gem kaminariを使用)
   - 投稿詳細、コメント機能
 
-- インフラ
-  - CapistranoによるEC2インスタンスへの自動デプロイ
-  - S3を用いた画像データのクラウドストレージ保存
-  - 上記は今後の予定
+# chatspace DB設計
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|nickname|string|null: false|
+
+### Association
+- has_many :tweets
+- has_many :comments
+
+## tweetsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|text||
+|title|string|null: false|
+|text|text|null: false|
+|user_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- has_many :comments
+
+## commentsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|tweet_id|integer|null: false, foreign_key: true|
+
+
+### Association
+- belongs_to :tweet
+- belongs_to :user
+
 
 # 使用技術一覧
 
@@ -70,8 +103,6 @@
   `$ rails s` <br><br>
 👉 http://localhost:3000 <br><br>
 
-## 今後やっていくこと
-  
 ## 👀 Author
 
 - [Github](https://github.com/fujimotohiroki)
