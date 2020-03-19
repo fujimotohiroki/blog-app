@@ -47,7 +47,7 @@
   - 投稿一覧、ページネーション機能(gem kaminariを使用)
   - 投稿詳細、コメント機能
 
-# chatspace DB設計
+# family-blog DB設計
 ## usersテーブル
 
 |Column|Type|Options|
