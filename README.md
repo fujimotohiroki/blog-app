@@ -70,6 +70,8 @@
   `$ rails s` <br><br>
 👉 http://localhost:3000 <br><br>
 
+## 今後やっていくこと
+  
 ## 👀 Author
 
 - [Github](https://github.com/fujimotohiroki)
